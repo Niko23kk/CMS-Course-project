@@ -1,0 +1,240 @@
+.main-panel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 100px 100px;
+}
+
+.text-info {
+    font-size: 18px;
+    width: 100%;
+}
+
+.text-info article {
+    transition: all 1000ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+.transform-out {
+    margin-right: 100%;
+    opacity: 0;
+}
+
+.transform-in {
+    margin-left: 100%;
+    opacity: 0;
+}
+
+.text-info p {
+    text-indent: 50px;
+}
+
+.text-info .p-center {
+    text-indent: 0px;
+    text-align: center;
+}
+
+.image-picture {
+    height: 250px;
+}
+
+.image-formula {
+    transition: 1s;
+    height: 50px;
+}
+
+.image-formula:hover {
+    height: 100px;
+}
+
+.background-h1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border-radius: 50px;
+    background-color: #31cf90;
+}
+
+h1 {
+    padding: 20px;
+    margin: 0 0 50px 0;
+    color: white;
+    border-radius: 10%;
+}
+
+.video-presentation {
+    margin: 10px 0 30px 0;
+    width: 70%;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.top-button,
+.bottom-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-button {
+    padding: 20px 0;
+}
+
+.bottom-button {
+    margin: 40px 0 0 0;
+}
+
+.important-text {
+    transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    font-size: 20px;
+    background-color: #31cf90;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5px 10px;
+}
+
+.important-text:hover {
+    cursor: pointer;
+    background-color: #c529e4;
+    color: white;
+}
+
+#right {
+    flex: 1;
+    text-align: right;
+}
+
+#left {
+    flex: 1;
+    text-align: left;
+}
+
+#rigth button.learn-more {
+    width: 3rem;
+}
+
+#left button.learn-more {
+    width: 12rem;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    text-align: right;
+    width: 3rem;
+    height: 3rem;
+    background: #c529e4;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+#right button.learn-more .circle .icon.arrow {
+    left: 0.625rem;
+}
+
+#left button.learn-more .circle .icon.arrow {
+    left: 1.2rem;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.3rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+}
+
+#right button.learn-more .circle .icon.arrow::before {
+    right: 0.0625rem;
+    transform: rotate(45deg);
+}
+
+#left button.learn-more .circle .icon.arrow::before {
+    right: 0.4rem;
+    transform: rotate(225deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.6rem 0;
+    color: #3b3b3b;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#right button.learn-more .button-text {
+    margin: 0 0 0 -15rem;
+}
+
+#left button.learn-more .button-text {
+    margin: 0 0 0 0rem;
+}
+
+#right button:hover .circle {
+    margin-left: -9rem;
+    width: 12rem;
+}
+
+#left button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+}
+
+button:hover .button-text {
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .main-panel {
+        padding: 100px 25px;
+    }
+    .background-h1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-panel {
+        padding: 100px 50px;
+    }
+}

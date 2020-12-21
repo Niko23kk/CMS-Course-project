@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site</title>
+    <link rel="shortcut icon" href="../source/bonny.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/author.css">
+    <link rel="stylesheet" href="../css/general.css">
+
+</head>
+
+<body class="main-body">
+    <header class="header-panel">
+        <div class="header-text" onClick="window.location='../page/main.html'">
+            <!-- <h3>Николаенков Алексей</h3> -->
+            <div> <img src="../source/bonny.png" id="logo"> </div>
+            <span class="them">Получение и исследование поляриованного света</span>
+        </div>
+        <a href="../page/main.html" type="button" class="main-menu-item">Главная</a>
+        <a href="../page/theory.html" type="button" class="main-menu-item">Теория</a>
+        <a href="../page/facility.html" type="button" class="main-menu-item">Установка</a>
+        <a href="../page/simulator.html" type="button" class="main-menu-item">Симулятор</a>
+        <a href="../page/author.html" type="button" class="main-menu-item active">Об авторе</a>
+
+        <content class="burger-display">
+            <input id="hamburger" class="hamburger display-no" type="checkbox" />
+            <label class="hamburger" for="hamburger">
+                <i></i>
+                <text>
+                  <close>close</close>
+                  <open>menu</open>
+                </text>
+           </label>
+            <section class="drawer-list">
+                <ul>
+                    <li><a href="../page/main.html" type="button" class="burger-menu-item">Главная</a></li>
+                    <li><a href="../page/theory.html" type="button" class="burger-menu-item">Теория</a></li>
+                    <li><a href="../page/facility.html" type="button" class="burger-menu-item">Установка</a></li>
+                    <li><a href="../page/simulator.html" type="button" class="burger-menu-item">Симулятор</a></li>
+                    <li><a href="../page/author.html" type="button" class="burger-menu-item">Об авторе</a></li>
+                </ul>
+            </section>
+        </content>
+    </header>
+
+    <div class="main-panel">
+
+        <div class="author-info">
+            <div class="img-container">
+                <input checked type="radio" name="slider" id="switch1">
+                <input type="radio" name="slider" id="switch2">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="image">
+                            <article><img src="../source/author/author5.jpg"></article>
+                            <article><img src="../source/author/author2.jpg"></article>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                </div>
+                <div id="active">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                </div>
+            </div>
+
+            <div class="text-author-info">
+                <div class="field-info full-name">
+                    <div class="icon"><img src="../source/user.svg"></div>
+                    <h2>Николаенков Алексей Олегович</h2>
+                </div>
+                <div class="field-info city">
+                    <div class="icon"><img src="../source/city.svg"></div>
+                    <h2>г. Борисов</h2>
+                </div>
+                <div class="field-info phone">
+                    <div class="icon"><img src="../source/phone.svg"></div>
+                    <h2>+375(44)76076**</h2>
+                </div>
+                <div class="field-info email">
+                    <div class="icon"><img src="../source/email.svg"></div>
+                    <h2>alexsnik23@mail.ru</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="creation">
+            <a type="button" class="start-button" onclick="creationVisible()">Творчество</a>
+
+            <div class="creation-container display-no">
+
+                <div class="creation-container-row">
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/Саус.png"></div>
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/Рик и морти.png"></div>
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/По ту сторону изгороди.png"></div>
+                </div>
+
+                <div class="creation-container-row">
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/кик.png"></div>
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/чип и дэйл.png"></div>
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/графити фолз.png"></div>
+                </div>
+
+                <div class="creation-container-row">
+                    <div class="element" onclick="popup(this,'img')"><img src="../source/author/гриффины.png"></div>
+                    <div class="element" onclick="popup(this,'video')"><video src="../source/author/mult1.mp4" poster="../source/author/mult1.jpg"></video></div>
+                    <div class="element" onclick="popup(this,'video')"><video src="../source/author/mult2.mp4" poster="../source/author/mult2.jpg"></video></div>
+                </div>
+
+                <div class="creation-container-row">
+                    <div class="element" onclick="popup(this,'video')"><video src="../source/author/mult3.mp4" poster="../source/author/mult3.jpg"></video></div>
+                    <div class="element" onclick="popup(this,'video')"><video src="../source/author/mult4.mp4" poster="../source/author/mult4.jpg"></video></div>
+                    <div class="element" onclick="popup(this,'video')"><video src="../source/author/mult5.mp4" poster="../source/author/mult5.jpg"></video></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" class="popup display-no">
+            <div id="popup-content" class="popup-content">
+            </div>
+        </div>
+    </div>
+
+    <a class="buttom-to-top opacity" onmousedown="backToTop()"></a>
+</body>
+<script type="text/javascript" src="../js/author.js"></script>
+<script type="text/javascript" src="../js/general.js"></script>
+
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site</title>
+    <link rel="shortcut icon" href="../source/bonny.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/simulator.css">
+</head>
+
+<body class="main-body">
+    <header class="header-panel">
+        <div class="header-text" onClick="window.location='../page/main.html'">
+            <!-- <h3>Николаенков Алексей</h3> -->
+            <div> <img src="../source/bonny.png" id="logo"> </div>
+            <span class="them">Получение и исследование поляриованного света</span>
+        </div>
+        <a href="../page/main.html" type="button" class="main-menu-item">Главная</a>
+        <a href="../page/theory.html" type="button" class="main-menu-item">Теория</a>
+        <a href="../page/facility.html" type="button" class="main-menu-item">Установка</a>
+        <a href="../page/simulator.html" type="button" class="main-menu-item active">Симулятор</a>
+        <a href="../page/author.html" type="button" class="main-menu-item">Об авторе</a>
+
+        <content class="burger-display">
+            <input id="hamburger" class="hamburger display-no" type="checkbox" />
+            <label class="hamburger" for="hamburger">
+                <i></i>
+                <text>
+                  <close>close</close>
+                  <open>menu</open>
+                </text>
+           </label>
+            <section class="drawer-list">
+                <ul>
+                    <li><a href="../page/main.html" type="button" class="burger-menu-item">Главная</a></li>
+                    <li><a href="../page/theory.html" type="button" class="burger-menu-item">Теория</a></li>
+                    <li><a href="../page/facility.html" type="button" class="burger-menu-item">Установка</a></li>
+                    <li><a href="../page/simulator.html" type="button" class="burger-menu-item">Симулятор</a></li>
+                    <li><a href="../page/author.html" type="button" class="burger-menu-item">Об авторе</a></li>
+                </ul>
+            </section>
+        </content>
+    </header>
+    <div class="main-panel">
+        <h1>3-D симулятор</h1>
+        <a type="button" class="start-button-unity" href="http://localhost:8887/index.html">Перейти к симулятору</a>
+    </div>
+    <a class="buttom-to-top opacity" onmousedown="backToTop()"></a>
+
+</body>
+<script type="text/javascript" src="../js/theory.js"></script>
+<script type="text/javascript" src="../js/general.js"></script>
+
+</html>

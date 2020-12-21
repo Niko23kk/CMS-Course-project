@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site</title>
+    <link rel="shortcut icon" href="../source/bonny.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/mainpage.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+
+<body class="main-body">
+    <header class="header-panel">
+        <div class="header-text" onClick="window.location='../page/main.html'">
+            <!-- <h3>Николаенков Алексей</h3> -->
+            <div> <img src="../source/bonny.png" id="logo"> </div>
+            <span class="them">Получение и исследование поляриованного света</span>
+        </div>
+        <a href="../page/main.html" type="button" class="main-menu-item active">Главная</a>
+        <a href="../page/theory.html" type="button" class="main-menu-item">Теория</a>
+        <a href="../page/facility.html" type="button" class="main-menu-item">Установка</a>
+        <a href="../page/simulator.html" type="button" class="main-menu-item">Симулятор</a>
+        <a href="../page/author.html" type="button" class="main-menu-item">Об авторе</a>
+
+        <content class="burger-display">
+            <input id="hamburger" class="hamburger display-no" type="checkbox" />
+            <label class="hamburger" for="hamburger">
+                <i></i>
+                <text>
+                  <close>close</close>
+                  <open>menu</open>
+                </text>
+           </label>
+            <section class="drawer-list">
+                <ul>
+                    <li><a href="../page/main.html" type="button" class="burger-menu-item">Главная</a></li>
+                    <li><a href="../page/theory.html" type="button" class="burger-menu-item">Теория</a></li>
+                    <li><a href="../page/facility.html" type="button" class="burger-menu-item">Установка</a></li>
+                    <li><a href="../page/simulator.html" type="button" class="burger-menu-item">Симулятор</a></li>
+                    <li><a href="../page/author.html" type="button" class="burger-menu-item">Об авторе</a></li>
+                </ul>
+            </section>
+        </content>
+    </header>
+
+    <div class="main-panel">
+        <div class="main-panel-text">
+            <h1>Курсовой проект</h1>
+            <h2>Николаенков Алексей Олегович</h2>
+            <h2>Получение и исследование поляризованного света</h2>
+            <a type="button" class="start-button" href="theory.html">К теории</a>
+        </div>
+
+        <div class="img-container">
+            <input checked type="radio" name="slider" id="switch1">
+            <input type="radio" name="slider" id="switch2">
+            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="slider" id="switch4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="image">
+                        <article><img src="../source/ustanovka/ustanovka5.jpg"></article>
+                        <article><img src="../source/ustanovka/ustanovka6.jpg"></article>
+                        <article><img src="../source/ustanovka/ustanovka7.jpg"></article>
+                        <article><img src="../source/ustanovka/ustanovka4.jpg"></article>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+            </div>
+            <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+            </div>
+        </div>
+
+        <a class="buttom-to-top opacity" onmousedown="backToTop()"></a>
+</body>
+<script type="text/javascript" src="../js/theory.js"></script>
+<script type="text/javascript" src="../js/general.js"></script>
+
+</html>

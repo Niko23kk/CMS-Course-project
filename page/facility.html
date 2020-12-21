@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site</title>
+    <link rel="shortcut icon" href="../source/bonny.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/facility.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/dialog.css">
+
+</head>
+
+<body class="main-body">
+    <header class="header-panel">
+        <div class="header-text" onClick="window.location='../page/main.html'">
+            <!-- <h3>Николаенков Алексей</h3> -->
+            <div> <img src="../source/bonny.png" id="logo"> </div>
+            <span class="them">Получение и исследование поляриованного света</span>
+        </div>
+        <a href="../page/main.html" type="button" class="main-menu-item">Главная</a>
+        <a href="../page/theory.html" type="button" class="main-menu-item">Теория</a>
+        <a href="../page/facility.html" type="button" class="main-menu-item active">Установка</a>
+        <a href="../page/simulator.html" type="button" class="main-menu-item">Симулятор</a>
+        <a href="../page/author.html" type="button" class="main-menu-item">Об авторе</a>
+
+        <content class="burger-display">
+            <input id="hamburger" class="hamburger display-no" type="checkbox" />
+            <label class="hamburger" for="hamburger">
+                <i></i>
+                <text>
+                  <close>close</close>
+                  <open>menu</open>
+                </text>
+           </label>
+            <section class="drawer-list">
+                <ul>
+                    <li><a href="../page/main.html" type="button" class="burger-menu-item">Главная</a></li>
+                    <li><a href="../page/theory.html" type="button" class="burger-menu-item">Теория</a></li>
+                    <li><a href="../page/facility.html" type="button" class="burger-menu-item">Установка</a></li>
+                    <li><a href="../page/simulator.html" type="button" class="burger-menu-item">Симулятор</a></li>
+                    <li><a href="../page/author.html" type="button" class="burger-menu-item">Об авторе</a></li>
+                </ul>
+            </section>
+        </content>
+    </header>
+
+    <div class="main-panel">
+        <div class="installation-description">
+            <article>
+                <div class="background-h1">
+                    <h1>Описание установки и методов измерения</h1>
+                </div>
+
+                <p class="p-center"><img src="../source/risustanovki.png" class="image-picture" onclick="popup(this)"></p>
+
+                <p>На рисунке ниже показана схема установки для исследования поляризации света. На
+                    <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka4.jpg')" onmouseout="toText(this,'оптической скамье 1')"><span>оптической скамье 1</span></span>
+                    размещены:
+                    <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka8.jpg')" onmouseout="toText(this,'источник света 2 (полупроводниковый лазер)')"><span>источник света 2 (полупроводниковый лазер)</span></span>, который
+                    через
+                    <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka9.jpg')" onmouseout="toText(this,'блок питания 3')"><span>блок питания 3</span></span> подключается в сеть; <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka14.jpg')"
+                        onmouseout="toText(this,'анализатор-поляроид 4')"><span>анализатор-поляроид 4</span></span>, заключенный в оп- раву, способную вращаться вокруг луча лазера (угол поворота численно равен углу поворота плоскости пропускания анализатора
+                    и измеряется по шкале, нанесенной на оправе); <span class="replace-text" class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka15.jpg')" onmouseout="toText(this,'фотоэлемент 5')"><span>фотоэлемент 5</span></span>,
+                    соединенный с <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka2.jpg')" onmouseout="toText(this,'микроамперметром 6')"><span>микроамперметром 6</span></span> (сила фототока, измеряемая микроамперметром,
+                    пропорциональна интенсивности света, выходящего из анализатора).
+                </p>
+                <div class="flash-first">
+                    <embed src="../source/flash/Кнопки.html" type=""></embed>
+                </div>
+                <div class="list-and-image">
+                    <ol class="component-list">
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka4.jpg')"><span class="list-span active-component-list">Оптическая скамья</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka8.jpg')"><span class=list-span>Источник света</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka9.jpg')"><span class=list-span>Блок питания</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka14.jpg')"><span class=list-span>Анализатор-поляроид</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka15.jpg')"><span class=list-span>Фотоэлемент</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka2.jpg' )"><span class=list-span>Микроамперметр</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka13.jpg')"><span class=list-span>Винт</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka12.jpg')"><span class=list-span>Образец</span></li>
+                        <li onclick="replaceImage(this,'../source/ustanovka/ustanovka11.jpg')"><span class=list-span>Тензометрический датчик</span></li>
+                    </ol>
+                    <img id="image-list" src="../source/ustanovka/ustanovka4.jpg">
+                </div>
+                <p>Для получения эллиптически поляризованного света на оптической скамье дополнительно размещают закрепленный в рамке деформируемый с помощью <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka13.jpg')" onmouseout="toText(this,'винта 7')"><span>винта 7</span></span>
+                    <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka12.jpg')" onmouseout="toText(this,'образец 8')"><span>образец 8</span></span>, соединенный с <span class="replace-text" onclick="toImage(this,'../source/ustanovka/ustanovka11.jpg')"
+                        onmouseout="toText(this,'тензометрическим датчиком 9')"><span>тензометрическим датчиком 9</span></span>. Цифровые показания тока разбалансировки i, регистрируемые датчиком, пропорциональны величине механического напряжения σ в образце.</p>
+                <p>Исследование плоскополяризованного света. Степень поляризации данного полупроводникового лазера близка к единице, а следовательно, интенсивность прошедшего через анализатор света должна удовлетворять закону Малюса. В этом можно убедиться,
+                    измерив интенсивности прошедшего через анализатор света при разных углах поворота плоскости пропускания анализатора. </p>
+                <p>Исследование эллиптически поляризованного света. Для поучения эллиптически поляризованного света в работе используется явление искусственной анизотропии. Многие вещества (стекло, плексиглас, бакелит и др.) при механических деформациях
+                    становятся оптически анизотропными (явление фотоупругости). В этом случае они подобны одноосному кристаллу, оптическая ось которого совпадает с направлением приложенной силы. </p>
+
+                <p>Пусть пучок плоскополяризованного света распространяется вдоль оси z перпендикулярно, действующей на образец силе F. Падающий на образец свет со световым вектором E0 можно представить как суперпозицию двух плоскополяризованных волн с взаимно
+                    перпендикулярными направлениями векторов поляризации E0x и E0 y . Из-за анизотропии скорости этих волн внутри образца различаются. Таким образом, в образце вдоль одного направления распространяются с различными скоростями два пучка
+                    – обыкновенный и необыкновенный.</p>
+                <div class="flash-second">
+                    <embed src="../source/flash/Установка.html" type=""></embed>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="popup" class="popup display-no">
+        <div id="popup-content" class="popup-content">
+        </div>
+    </div>
+
+    <a class="buttom-to-top opacity" onclick="backToTop()"></a>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/facility.js"></script>
+<script type="text/javascript" src="../js/general.js"></script>
+<script type="text/javascript" src="../js/bd.js  "></script>
+<script src="https://webasr.yandex.net/jsapi/v1/webspeechkit.js" type="text/javascript"></script>
+
+</html>
